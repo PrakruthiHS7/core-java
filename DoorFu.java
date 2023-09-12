@@ -1,0 +1,3 @@
+class DoorFu extends Furniture {
+
+}

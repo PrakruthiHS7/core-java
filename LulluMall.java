@@ -1,0 +1,2 @@
+class LulluMall extends Mall {
+}

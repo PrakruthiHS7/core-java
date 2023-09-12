@@ -1,0 +1,2 @@
+class ViratKohli extends Cricketer {
+}

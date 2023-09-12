@@ -1,0 +1,2 @@
+class Maggie extends FastFood {
+}
