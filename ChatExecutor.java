@@ -7,15 +7,15 @@
         chatPlatform.addChatName("Bhel puri");
         chatPlatform.addChatName("Pani Puri");
         chatPlatform.addChatName("aloo chaat");
-	    chatPlatform.addChatName("Dahi Vada");
-		chatPlatform.addChatName("Masala Vade");
+	    chatPlatform.addChatName("Bhel puri");
+		chatPlatform.addChatName("Masala Vada");
 		chatPlatform.addChatName("Cheese Rolls");
-		chatPlatform.addChatName("Phuchka");
-		chatPlatform.addChatName("MasalaPuri");
-        chatPlatform.addChatName("Papri Chaat");
+		chatPlatform.addChatName("Masala Vada");
+		chatPlatform.addChatName("Masala Puri");
+        chatPlatform.addChatName("Pani Puri");
 	    chatPlatform.addChatName("Samosa Chaat");
-
-        // Getting and printing chat names
         chatPlatform.getChatNames();
+        // Getting and printing chat names
+        
     }
 }

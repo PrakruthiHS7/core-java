@@ -5,27 +5,54 @@ class Chat{
     // Method to add a chat name
     public boolean addChatName(String chatName)
 	{
-        
-        boolean isAdded = false; // Local variable, initialized to false by default
-
-        if (chatName != null ) 
+        boolean isAdded = false; 
+        if(index < chatNames.length)
 		{
-            
-            chatNames[index] = chatName;
-            index++;
-            isAdded = true;
-        }
-
+          if (chatName != null ) 
+		   {
+             boolean exists=checkIfNameExists(chatName);
+			   if(exists==false)
+			   {
+                chatNames[index] = chatName;
+                index++;
+                isAdded =true;
+			    
+			   }
+			    else
+			  {
+				  System.out.println( chatName +" is aleady added");
+			  }		
+          }
+		}
+		else{
+		   System.out.println("chatname size is full..cannot procees to add the data");
+		   }
         return isAdded;
     }
 
+    
+      public boolean checkIfNameExists(String chatName)
+		{
+			boolean exists=false;
+	      for(int index=0;index<chatNames.length;index++)
+	       {
+		  
+			   if (chatNames[index]==chatName)
+			   {
+			    exists=true;
+			   }
+		   
+	       }  
+		  return exists;
+		}
+		
     // Method to retrieve and print chatNames
     public void getChatNames() 
 	{
         System.out.println("The list of Chat Names:");
         for (int index = 0; index <chatNames.length; index++) 
 		{
-            System.out.println(chatNames[index] + " is added successfully");
+            System.out.println(chatNames[index] );
         }
     }
 }

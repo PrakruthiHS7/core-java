@@ -1,21 +1,20 @@
 class InteriorsExecutor{
 
-     public static void main (String interiorexe[]){
-	 
-	      Interiors interior = new Interiors();
-		  interior.addInteriors("Color Palette");
-		  interior.addInteriors("Furniture Selection");
-		  interior.addInteriors("Layout");
-		  interior.addInteriors("Lighting");
-		  interior.addInteriors("Texture and Materials");
-		  interior.addInteriors("Flooring");
-		  interior.addInteriors("Style");
-		  interior.addInteriors("Theme ");
-		  interior.addInteriors("Accessories ");
-		  interior.addInteriors("Decor");
-		  
-		  interior.getDetails();
-	 
-	 }
+public static void main(String interior[]){
 
+Interior materialName = new Interior();
+materialName.addMaterialName("Wood");
+materialName.addMaterialName("Glass");
+materialName.addMaterialName("Marble");
+materialName.addMaterialName("Tile");
+materialName.addMaterialName("Textile");
+materialName.addMaterialName("kallu");
+materialName.addMaterialName("Metal");
+materialName.addMaterialName("Ceramic");
+materialName.addMaterialName("Metal");
+materialName.addMaterialName("Plastic");
+
+
+materialName.getMaterialNames();
+}
 }

@@ -4,10 +4,10 @@
         Spotify spotify= new Spotify();
 
         // Adding song names
-		spotify.addSongName("Heeirye");
+		spotify.addSongName("Heeriye");
 		spotify.addSongName("Challeya");
 		spotify.addSongName("Chikkini chammeli");
-		spotify.addSongName("Tun hi aana");
+		spotify.addSongName("Heeriye");
 		spotify.addSongName("Tu Chale");
 		spotify.addSongName("Chammak Challo");
 		spotify.addSongName("Naah");

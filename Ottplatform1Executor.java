@@ -7,6 +7,9 @@ ottplatform.addMoviesName("Appu");
 ottplatform.addMoviesName("Arasu");
 ottplatform.addMoviesName("Ugram");
 ottplatform.addMoviesName("Power");
+ottplatform.addMoviesName("Appu");
+ottplatform.addMoviesName("Arasu");
+ottplatform.addMoviesName("KirikParty");
 ottplatform.getMoviesName();
 }
 }

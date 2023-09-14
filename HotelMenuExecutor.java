@@ -1,19 +1,20 @@
-class HotelMenuExecutor {
-    public static void main(String hotels[])
-	{
-       
-      Hotel hotel=new Hotel();
-        hotel.addMenuItem("Burger");
-        hotel.addMenuItem("Pizza");
-        hotel.addMenuItem("Spaghetti");
-        hotel.addMenuItem("Salad");
-		hotel.addMenuItem("Lasagna");
-        hotel.addMenuItem("Tacos");
-        hotel.addMenuItem("Chicken Parmesan");
-        hotel.addMenuItem("Shrimp Scampi");
-        hotel.addMenuItem("Mushroom Risotto");
-		hotel.addMenuItem("Fish and Chips");
-		
-        hotel.getMenuItems();
+class HotelMenuExecutor{
+  
+     public static void main(String hotelmenu[]) {
+        // Create an instance of Hotel
+        HotelMenu hotelMenu = new HotelMenu();
+        hotelMenu.addMenuItem("masaldose");
+        hotelMenu.addMenuItem("paroota");
+        hotelMenu.addMenuItem("egg rice");
+        hotelMenu.addMenuItem("chicken biriyani");
+        hotelMenu.addMenuItem("chilly chicken");
+        hotelMenu.addMenuItem("egg rice");
+        hotelMenu.addMenuItem("egg biriyani");
+		hotelMenu.addMenuItem("chilly chicken");
+        hotelMenu.addMenuItem("fish kabab");
+        hotelMenu.addMenuItem("chicken lollypop");
+
+        // Display the menu
+        hotelMenu.displayMenu();
     }
 }

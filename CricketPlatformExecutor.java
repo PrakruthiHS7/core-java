@@ -5,14 +5,14 @@ class CricketPlatformExecutor
         CricketPlatform cricketPlatform = new CricketPlatform();
 
         // Adding cricket player names
-        cricketPlatform.addPlayerNames("Virak Kohli");
+        cricketPlatform.addPlayerNames("Virat Kohli");
         cricketPlatform.addPlayerNames("Hardik. Pandya");
-        cricketPlatform.addPlayerNames("MS Dhoni");
+        cricketPlatform.addPlayerNames("Virat Kohli");
 		cricketPlatform.addPlayerNames("RohitSharma");
 		cricketPlatform.addPlayerNames("Rishabh");
 		cricketPlatform.addPlayerNames("Ravichandran");
 		cricketPlatform.addPlayerNames("Ashwin");
-		cricketPlatform.addPlayerNames("Sourav Ganguly");
+		cricketPlatform.addPlayerNames("RohitSharma");
 		cricketPlatform.addPlayerNames("Rahul Dravid");
 		cricketPlatform.addPlayerNames("KL Rahul");
 
