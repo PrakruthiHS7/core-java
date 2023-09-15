@@ -16,5 +16,11 @@ class HotelMenuExecutor{
 
         // Display the menu
         hotelMenu.displayMenu();
+		
+		String menuItem="egg biriyani";
+		System.out.println("Searching for the menu item " +menuItem);
+		String item=hotelMenu.searchByMenuItem(menuItem);
+		System.out.println(item +" is found! thank you searching. " );
+		
     }
 }

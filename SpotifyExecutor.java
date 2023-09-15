@@ -17,5 +17,10 @@
 
         // Getting and printing song names
         spotify.getSongNames();
+		
+		String songName = "Challeya";
+      System.out.println("Searching for the Song Name " +songName);
+      String sName=spotify.searchSongName(songName);
+	  System.out.println(sName +" is found! thank you searching. " );
     }
 }

@@ -11,5 +11,10 @@ ottplatform.addMoviesName("Appu");
 ottplatform.addMoviesName("Arasu");
 ottplatform.addMoviesName("KirikParty");
 ottplatform.getMoviesName();
+
+String mName = "Power";
+System.out.println("Searching for the movie " +mName);
+String movieName= ottplatform.searchByMovieName(mName);
+System.out.println(movieName +" is found! thank you  for searching");
 }
 }

@@ -18,5 +18,12 @@ class CricketPlatformExecutor
 
         // Getting and printing cricket player names
         cricketPlatform.getPlayerNames();
+		 
+		 String playerName = "KL Rahul";
+     System.out.println("Searching for the playerName " +playerName);
+    String pName = cricketPlatform.searchByPlayerName(playerName);
+
+    System.out.println(pName +" is found! thank you  for searching");
+		
     }
 }

@@ -10,8 +10,7 @@ class Spotify
         if (songName != null) {
             boolean exists = checkIfNameExists(songName);
             if (!exists) {
-                songNames[index] = songName;
-                index++;
+                songNames[index++] = songName;
                 isAdded = true;
             } else {
                 System.out.println(songName + " is already added");
@@ -51,4 +50,17 @@ class Spotify
             System.out.println(songNames[index] );
         }
     }
+	
+	//search
+    public String searchSongName( String songName)
+		{      
+			for(int i=0;i<songNames.length;i++)
+			{
+				if(songNames[i]==songName)
+					  return songName;
+			}
+			return null;
+		}
+	
+	
 }

@@ -44,12 +44,26 @@ class CricketPlatform
 		}
 		return exists;
 	}
+	
+	
 
     // Method to retrieve and print cricket player names
-    public void getPlayerNames() {
+    public void getPlayerNames() 
+	{
         System.out.println("Cricket Player Names:");
         for (int index=0; index < playerNames.length; index++) {
             System.out.println(playerNames[index]);
         }
     }
+	
+	// Search for a playerName
+		public String searchByPlayerName(String playerName)
+		{      
+			for(int i=0;i<playerNames.length;i++)
+			{
+				if(playerNames[i]==playerName)
+					  return playerName;
+			}
+			 return null;
+		}
 }

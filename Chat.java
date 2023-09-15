@@ -18,7 +18,7 @@ class Chat{
                 isAdded =true;
 			    
 			   }
-			    else
+			   else
 			  {
 				  System.out.println( chatName +" is aleady added");
 			  }		
@@ -40,13 +40,23 @@ class Chat{
 			   if (chatNames[index]==chatName)
 			   {
 			    exists=true;
-			   }
-		   
+			   }	   
 	       }  
 		  return exists;
 		}
 		
-    // Method to retrieve and print chatNames
+		// Search for a chatName
+		public String searchBychatName(String chatName)
+		{      
+			for(int i=0;i<chatNames.length;i++)
+			{
+				if(chatNames[i]==chatName)
+					  return chatName;
+			}
+			 return null;
+		}
+		
+    // Method to retrieve/read and print chatNames
     public void getChatNames() 
 	{
         System.out.println("The list of Chat Names:");

@@ -16,6 +16,12 @@
 	    chatPlatform.addChatName("Samosa Chaat");
         chatPlatform.getChatNames();
         // Getting and printing chat names
+		
+		
+		String cName = "Pani Puri";
+       System.out.println("Searching for the chat " +cName);
+       String chatName= chatPlatform.searchBychatName(cName);
+       System.out.println(chatName +" is found! thank you  for searching");
         
     }
 }

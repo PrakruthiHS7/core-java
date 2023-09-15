@@ -1,8 +1,8 @@
 class InteriorsExecutor{
 
-public static void main(String interior[]){
+public static void main(String interiors[]){
 
-Interior materialName = new Interior();
+Interiors materialName = new Interiors();
 materialName.addMaterialName("Wood");
 materialName.addMaterialName("Glass");
 materialName.addMaterialName("Marble");
@@ -14,7 +14,11 @@ materialName.addMaterialName("Ceramic");
 materialName.addMaterialName("Metal");
 materialName.addMaterialName("Plastic");
 
-
 materialName.getMaterialNames();
+
+      String materialsName = "Glass";
+      System.out.println("Searching for the materialName " +materialsName);
+      String mName=materialName.searchMaterialName(materialsName);
+	  System.out.println(mName +" is found! thank you searching. " );
 }
 }
