@@ -61,6 +61,20 @@ class Spotify
 			}
 			return null;
 		}
-	
-	
+		
+	// deleted;
+   public boolean deletedBySong(String song)
+  {
+	  boolean isDeleted=false;
+	  int ind=0;
+	  for(int i=0;i<songNames.length;i++)
+	  {
+		  if(songNames[i]!=song)
+		  {
+			  songNames[ind++]=songNames[i];
+		      isDeleted=true;  
+		  }		   
+	  }
+  return isDeleted;
+}
 }

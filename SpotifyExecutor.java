@@ -22,5 +22,11 @@
       System.out.println("Searching for the Song Name " +songName);
       String sName=spotify.searchSongName(songName);
 	  System.out.println(sName +" is found! thank you searching. " );
+	  
+	  
+	  String song="Naah";
+	boolean  deletedsong=spotify.deletedBySong(song);
+	System.out.println("is " + song +" song deleted ? : " +deletedsong);
+        
     }
 }

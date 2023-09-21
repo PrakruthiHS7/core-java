@@ -20,5 +20,12 @@ materialName.getMaterialNames();
       System.out.println("Searching for the materialName " +materialsName);
       String mName=materialName.searchMaterialName(materialsName);
 	  System.out.println(mName +" is found! thank you searching. " );
+	  
+	  
+	  
+	  String iName="Metal";
+	boolean  deletedMaterial=materialName.deletedByMaterial(iName);
+	System.out.println("is " + iName +" material deleted ? : " +deletedMaterial);
+        
 }
 }

@@ -66,4 +66,24 @@ class CricketPlatform
 			}
 			 return null;
 		}
+		
+		
+		
+        public boolean deletedByPlayer(String playerName)
+	{
+		boolean isDeleted=false;
+		String playerNameAfterDelete[]=new String [playerNames.length-1];
+		int ind=0;
+		for(int index=0;index<playerNames.length;index++)
+        {
+			if(playerNames[index]!=playerName)
+			{
+				playerNames[ind++]=playerNames[index];
+			    isDeleted=true;
+			}
+		}
+		
+	
+	return isDeleted;
+    }
 }

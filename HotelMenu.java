@@ -62,6 +62,22 @@ class HotelMenu {
 			}
 			 return null;
 		}
-
-
+		
+	public boolean deletedByMenu(String menuItem)
+	{
+		boolean isDeleted=false;
+		int ind=0;
+		for(int i=0;i<menuItems.length;i++)
+		{
+			if(menuItems[i]!=menuItem)
+			{
+				menuItems[ind++]=menuItems[i];
+				isDeleted=true;
+			}
+			 
+		}
+		return isDeleted;
+		
+	}		
 }
+		

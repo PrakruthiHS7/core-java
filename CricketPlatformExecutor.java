@@ -24,6 +24,9 @@ class CricketPlatformExecutor
     String pName = cricketPlatform.searchByPlayerName(playerName);
 
     System.out.println(pName +" is found! thank you  for searching");
-		
+	
+	String pdName="Ashwin";
+	boolean  deletedPlayer=cricketPlatform.deletedByPlayer(playerName);
+	System.out.println("is " + pdName +" player deleted ? : " +deletedPlayer);	
     }
 }

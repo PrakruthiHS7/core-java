@@ -22,6 +22,10 @@
        System.out.println("Searching for the chat " +cName);
        String chatName= chatPlatform.searchBychatName(cName);
        System.out.println(chatName +" is found! thank you  for searching");
+	   
+	   String cdName="Pani Puri";
+	   boolean deletedChat=chatPlatform.deletedByChat(cdName);
+	   System.out.println("is " + cdName +" chat deleted ? : " +deletedChat);
         
     }
 }

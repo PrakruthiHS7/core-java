@@ -65,4 +65,22 @@ class Chat{
             System.out.println(chatNames[index] );
         }
     }
+	
+	public boolean deletedByChat(String chat)
+	{
+		boolean isDeleted=false;
+		String chatNamesAfterDelete[]=new String [chatNames.length-1];
+		int ind=0;
+		for(int index=0;index<chatNames.length;index++)
+		{
+			if(chatNames[index]!=chat)
+			{
+				chatNames[ind++]=chatNames[index];
+			     isDeleted=true;
+			}
+		}
+		
+	
+	return isDeleted;
+	}
 }

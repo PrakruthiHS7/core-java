@@ -58,5 +58,21 @@ public boolean addMaterialName(String materialName)
 	}
    return null;
   }
+  
+  
+  public boolean deletedByMaterial(String materialName)
+  {
+	  boolean isDeleted=false;
+	  int ind=0;
+	  for(int i=0;i<materialNames.length;i++)
+	  {
+		  if(materialNames[i]!=materialName)
+		  {
+			 materialNames[ind++]=materialNames[i];
+		   isDeleted=true;  
+		  }		   
+	  }
+  return isDeleted;
 
+}
 }

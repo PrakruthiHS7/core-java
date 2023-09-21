@@ -67,5 +67,24 @@ class Ottplatform1
 		
 	}
 	
+	public boolean deletedByMovie(String movieName)
+	{
+	boolean isDeleted=false;
+	String movieNamesAfterDelete []=new String [movieNames.length-1];
+	int ind=0;
+	
+	for(int index=0;index<movieNames.length;index++)
+	{
+		if(movieNames[index]!=movieName)
+		{
+			movieNamesAfterDelete[ind++]=movieNames[index];
+			isDeleted=true;
+		}
+	}
+	
+	return isDeleted;
+	}
+	
+	
 }
  

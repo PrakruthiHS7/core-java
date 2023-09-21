@@ -22,5 +22,13 @@ class HotelMenuExecutor{
 		String item=hotelMenu.searchByMenuItem(menuItem);
 		System.out.println(item +" is found! thank you searching. " );
 		
+		
+		
+		String mName="fish kabab";
+	boolean  deletedMenu=hotelMenu.deletedByMenu(mName);
+	System.out.println("is " + mName +" menu deleted ? : " +deletedMenu);
+        
+		
+		
     }
 }
