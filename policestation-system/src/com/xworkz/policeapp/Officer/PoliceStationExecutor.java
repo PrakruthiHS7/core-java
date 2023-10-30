@@ -1,7 +1,7 @@
 package com.xworkz.policeapp.Officer;
 
 import com.xworkz.policeapp.Officer.Officer.Officer;
-import com.xworkz.policeapp.Officer.station.PoliceStation;
+import com.xworkz.policeapp.Officer.station.RajajiNagarPoliceStation;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class PoliceStationExecutor {
                    //reads the integer from the keyboard/user.
         int size = sc.nextInt();
 
-        PoliceStation policeStation=new PoliceStation(size);
+        RajajiNagarPoliceStation policeStation=new RajajiNagarPoliceStation(size);
 
         for (int index = 0; index <size ; index++)
         {
@@ -51,9 +51,10 @@ public class PoliceStationExecutor {
         policeStation.getAllOfficer();
         String input=null;
         do {
-            System.out.println("Press one to get details");
-            System.out.println("Press two to get details");
-            System.out.println("Press three to get details");
+            System.out.println("Press one to get getAllOfficer");
+            System.out.println("Press two to get OfficersNameByPostName");
+            System.out.println("Press three to get AdressById");
+            System.out.println("Press 4 to get ");
             int option=sc.nextInt();
             switch (option){
                 case 1:policeStation.getAllOfficer();
@@ -69,6 +70,14 @@ public class PoliceStationExecutor {
                    String address=policeStation.getAdressById(sc.nextInt());
                     System.out.println(address);
                     break;
+                case 4:
+                    System.out.println("Enter Id to get the OfficerInformation");
+                     String officerInfo=policeStation.getOfficerInfoById(sc.nextInt());
+                    System.out.println(officerInfo);
+                case 5:
+                    System.out.println("enter name to get the age");
+                    int age= policeStation.getOfficersAGeByName(sc.next());
+                    System.out.println(age);
                 default:
                     System.out.println("Please choose the correct option");
                     break;
@@ -78,8 +87,6 @@ public class PoliceStationExecutor {
             input=sc.next();
         }while (input.equals("yes"));
         System.out.println(("thank you for using!...."));
-
-        
 
     }
 }
