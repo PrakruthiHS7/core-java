@@ -1,5 +1,7 @@
 package com.xworkz.playstore.playstore;
 import com.xworkz.playstore.application.Application;
+import com.xworkz.playstore.exception.ApplicationNameNotFoundException;
+import com.xworkz.playstore.exception.ApplicationNotFoundException;
 
 public interface SoftwareHub {
     /*int dummy=10; static final dummy=10;
@@ -10,9 +12,10 @@ public interface SoftwareHub {
      */
     public abstract boolean addApplications(Application application);
     public void getAllApplication();
-    public Application getApplicatonByName(String appName);
-    public Application getApplicatonById(int appId);
-    public Application getApplicationByType(String apptype);
+    //custom checked exception
+    public Application getApplicatonByName(String appName)throws ApplicationNameNotFoundException;
+    public Application getApplicatonById(int appId) throws ApplicationNotFoundException;
+    public Application getApplicationByType(String apptype)throws ApplicationNotFoundException;
     public String getApplicationNameByType(String appType);
     public  String getApplicationTypeByName(String appName);
     public  double getApplicationSizeByName(String appName);

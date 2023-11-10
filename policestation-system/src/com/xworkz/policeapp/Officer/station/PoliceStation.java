@@ -12,6 +12,6 @@ public interface PoliceStation {
     public int getOfficersAGeByName (String name);
     public String postNameByName(String name);
     public boolean updatePostNameByOfficerName(String updatedPostName, String existingOfficerName);
-    public void deletedOfficerById(int id);
+    public boolean deletedOfficerById(int id);
     public void getAllNewApplication(Officer application[]);
 }
